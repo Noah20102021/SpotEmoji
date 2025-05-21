@@ -18,18 +18,14 @@ Backend: Node.js with Express.js
 
 Real-time Communication: Socket.io
 
-Deployment: Ngrok for secure local tunneling
-
 🚀 Getting Started
 To run the game locally:
 
-bash
-Copy
-Edit
 git clone https://github.com/your-username/spot-emoji.git
 cd spot-emoji
 npm install
 npm start
+
 Then, navigate to http://localhost:3000 in your browser to start playing.
 
 Feel free to customize this description further based on additional features or specific technologies used in your project!
