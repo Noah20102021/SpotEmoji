@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Doppel | Home</title>
+    <link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="menue">
+            <div class="player1"><a  class="emoji-container">
+                <span id="emojip1" class="emoji">👑</span>
+                <p id="namep1" class="text">❓</p>
+            </a>
+            </div>
+            <div class="versusDiv"><img class="vsImage" src="/assets/images/imageedit_2_8073919138.png" alt="Versus">
+            </div>
+            <div class="player2"><a class="emoji-container">
+                <span id="emojip2" class="emoji">❌</span>
+                <p id="namep2" class="text">❓</p>
+            </a>
+
+            </div>
+        </div>
+    </div>
+    <!-- Socket.IO Client-Skript laden -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Dein eigenes Client-Skript -->
+         <script src="client.js"></script>
+         <script>
+            const exampleCard = ["🐖", "💾", "⚙️", "💿", "❤️", "😀", "👌", "👀"];
+renderDobbleCard(exampleCard);
+
+         </script>
+
+</body>
+
+</html>

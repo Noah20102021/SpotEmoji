@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Indexierung & Follow (für Google & Co.) -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Zeichensatz der Website -->
+    <meta charset="UTF-8">
+
+    <!-- Sprache des Inhalts -->
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title (browser tab + search engines) -->
+    <title>Spot Emoji! – The Fast-Paced Online Emoji Game</title>
+
+    <!-- Meta description: short, catchy, and SEO-friendly -->
+    <meta name="description" content="Play Spot Emoji – the fast-paced online reaction game with emojis! Find the matching emoji faster than your friends. Free, browser-based, and no sign-up needed.">
+
+    <!-- Keywords: relevant to the content, no trademarked names -->
+    <meta name="keywords" content="online game, emoji game, reaction game, multiplayer browser game, Spot Emoji, card game online, browser game, kids game, party game">
+
+    <!-- Social Media preview (Open Graph) -->
+    <meta property="og:title" content="Spot Emoji! – The Fast Online Emoji Game">
+    <meta property="og:description" content="Find the matching emoji faster than your friends – in this colorful and fun reaction game!">
+    <meta property="og:image" content="https://example.com/spot-emoji-preview.png">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
+
+    <!-- Mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Spot Emoji!" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="menue">
+            <div>
+            <h1 class="menue-item">Spot Emoji!</h1>
+            <p class="menue-item disciption">Welcome to the unofficial online variant of the game classic!</p>
+            <input class="menue-item codeinput" type="text" id="lobbyId" placeholder="Lobby-ID">
+            <br>
+            <button class="menue-item joinBtn" onclick="window.location.href = '/lobby.html?lobbyid='+document.getElementById('lobbyId').value+''">Create/join lobby</button>
+            <br>
+        </div>
+        </div>
+        <div id="status"></div>
+    </div>
+    <!-- Socket.IO Client-Skript laden -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Dein eigenes Client-Skript -->
+</body>
+
+</html>

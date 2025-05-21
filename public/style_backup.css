@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c1ebf6;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.menue {
+    background: #ffe21b;
+    border-color: #9879b0;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 20px;
+    height: 750px;
+    width: 500px;
+    text-align: center;
+    margin: 10px;
+}
+
+.menue-item {
+    margin-top: 50px;
+    font-family: "Luckiest Guy";
+}
+
+.disciption {
+    font-size: large;
+}
+.link {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: xxx-large;
+    color: #9879b0;
+}
+h2{
+    font-size: xx-large;
+    color: #9879b0;
+}
+.codeinput {
+    background-color: #c1ebf6;
+    border-radius: 150px;
+    border-color: #d9f2f8;
+    border-style: solid;
+    width: 400px;
+    font-size: xx-large;
+    height: 75px;
+    text-align: center;
+}
+.codedisplay {
+    background-color: #c1ebf6;
+    border-radius: 150px;
+    border-color: #d9f2f8;
+    border-style: solid;
+    width: 400px;
+    height: 75px;
+    text-align: center;
+}
+
+.joinBtn {
+    margin-top: 10px;
+    color: #ffff;
+    background-color: #9879b0;
+    border-radius: 150px;
+    border-color: #9879b0;
+    border-style: solid;
+    width: 400px;
+    font-size: x-large;
+    height: 75px;
+    text-align: center;
+    transition-duration: 100ms;
+}
+.joinBtn:hover{
+background-color: #8e6aaa;
+}
+.player1{
+    
+    height: 275px;
+    margin: 0;
+    padding-right: 100px;
+}
+.player2{
+    
+    height: 275px;
+    padding-left: 100px;
+}
+.vsImage{
+height: 200px;
+}
+.emoji-container {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.emoji {
+  position: absolute;
+  font-size: 200px;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Damit das Emoji keine Klicks abfängt */
+}
+
+.text {
+  position: relative;
+  font-size: xxx-large;
+  font-weight: bold;
+  color: #333;
+  z-index: 1;
+  top: 30%;
+ 
+  transform: translateY(-50%);
+   transform: rotate(10deg);
+  background-color: #8e6aaaab;
+  border-radius: 50px;
+}
+.game{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.playerCard{
+    background-color: white;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    justify-self: flex-end;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.mainCard{
+    display: grid;
+grid-template-columns: repeat(8, 1fr);
+grid-template-rows: repeat(8, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+    margin: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: white;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    justify-self: center;
+}
+.playerCard{
+    display: grid;
+grid-template-columns: repeat(8, 1fr);
+grid-template-rows: repeat(8, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+    margin: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: white;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    justify-self: center;
+}
+.cardItem {
+  font-size: 100px;
+  display: inline-block; /* wichtig für transform */
+  transition: transform 0.3s ease;
+   cursor: pointer;
+  user-select: none;
+}
+
+.cardItemDiv1 { grid-area: 2 / 2 / 4 / 4; }
+.cardItemDiv2 { grid-area: 2 / 4 / 4 / 6; }
+.cardItemDiv3 { grid-area: 2 / 6 / 4 / 8; }
+.cardItemDiv4 { grid-area: 4 / 2 / 6 / 4; }
+.cardItemDiv5 { grid-area: 4 / 4 / 6 / 6; }
+.cardItemDiv6 { grid-area: 4 / 6 / 6 / 8; }
+.cardItemDiv7 { grid-area: 6 / 3 / 8 / 5; }
+.cardItemDiv8 { grid-area: 6 / 5 / 8 / 7; }

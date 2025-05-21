@@ -1,0 +1,250 @@
+/* Grundlegende Stile und Variablen */
+:root {
+    --main-bg-color: #c1ebf6;
+    --menu-bg-color: #ffe21b;
+    --accent-color: #9879b0;
+    --card-bg-color: white;
+    --input-border-color: #d9f2f8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--main-bg-color);
+    min-height: 100vh;
+}
+
+/* Hauptcontainer */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Menü-Bereich */
+.menue {
+    background: var(--menu-bg-color);
+    border-color: var(--accent-color);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: clamp(10px, 3vw, 20px);
+    max-width: 90%;
+    width: 500px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menue-item {
+    margin-top: clamp(20px, 5vw, 50px);
+    font-family: "Luckiest Guy", cursive, sans-serif;
+}
+
+/* Text-Stile */
+.disciption {
+    font-size: clamp(16px, 3vw, 20px);
+    max-width: 100%;
+    padding: 0 1rem;
+}
+
+.link {
+    font-size: clamp(16px, 3vw, 20px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: clamp(32px, 7vw, 60px);
+    color: var(--accent-color);
+}
+
+h2 {
+    font-size: clamp(24px, 5vw, 40px);
+    color: var(--accent-color);
+}
+
+/* Eingabefelder und Buttons */
+.codeinput {
+    background-color: var(--main-bg-color);
+    border-radius: 50px;
+    border-color: var(--input-border-color);
+    border-style: solid;
+    width: 100%;
+    max-width: 400px;
+    font-size: clamp(18px, 4vw, 32px);
+    height: auto;
+    padding: 0.8rem;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.codedisplay {
+    background-color: var(--main-bg-color);
+    border-radius: 50px;
+    border-color: var(--input-border-color);
+    border-style: solid;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    min-height: 50px;
+    padding: 0.8rem;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.joinBtn {
+    margin-top: 10px;
+    color: #fff;
+    background-color: var(--accent-color);
+    border-radius: 50px;
+    border-color: var(--accent-color);
+    border-style: solid;
+    width: 100%;
+    max-width: 400px;
+    font-size: clamp(16px, 3vw, 24px);
+    height: auto;
+    padding: 0.8rem;
+    text-align: center;
+    transition-duration: 100ms;
+    cursor: pointer;
+}
+
+.joinBtn:hover {
+    background-color: #8e6aaa;
+}
+
+/* Spieler und VS-Bereich */
+.player1, .player2 {
+    height: auto;
+    max-height: 275px;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.player1 {
+    padding-right: clamp(20px, 5vw, 100px);
+}
+
+.player2 {
+    padding-left: clamp(20px, 5vw, 100px);
+}
+
+.vsImage {
+    height: auto;
+    max-height: 200px;
+    width: auto;
+    max-width: 100%;
+}
+
+/* Emoji-Container */
+.emoji-container {
+    position: relative;
+    display: inline-block;
+    width: clamp(150px, 30vw, 250px);
+    height: clamp(150px, 30vw, 250px);
+    text-align: center;
+    overflow: hidden;
+}
+
+.emoji {
+    position: absolute;
+    font-size: clamp(100px, 20vw, 200px);
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.text {
+    position: relative;
+    font-size: clamp(24px, 5vw, 40px);
+    font-weight: bold;
+    color: #333;
+    z-index: 1;
+    top: 30%;
+    transform: rotate(10deg);
+    background-color: #8e6aaaab;
+    border-radius: 25px;
+    padding: 0.5rem;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* Spielbereich */
+.game {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Karten-Layouts */
+.playerCard, .mainCard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    background-color: var(--card-bg-color);
+    border-radius: 50%;
+    width: clamp(250px, 80vw, 500px);
+    height: clamp(250px, 80vw, 500px);
+    margin: 1rem auto;
+    aspect-ratio: 1/1;
+}
+
+.cardItem {
+    font-size: clamp(50px, 10vw, 100px);
+    display: inline-block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Grid-Bereiche für Kartenitems */
+.cardItemDiv1 { grid-area: 2 / 2 / 4 / 4; }
+.cardItemDiv2 { grid-area: 2 / 4 / 4 / 6; }
+.cardItemDiv3 { grid-area: 2 / 6 / 4 / 8; }
+.cardItemDiv4 { grid-area: 4 / 2 / 6 / 4; }
+.cardItemDiv5 { grid-area: 4 / 4 / 6 / 6; }
+.cardItemDiv6 { grid-area: 4 / 6 / 6 / 8; }
+.cardItemDiv7 { grid-area: 6 / 3 / 8 / 5; }
+.cardItemDiv8 { grid-area: 6 / 5 / 8 / 7; }
+
+/* Media Queries für verschiedene Bildschirmgrößen */
+@media (min-width: 768px) {
+    .main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .playerCard, .mainCard {
+        margin: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .menue {
+        height: auto;
+        min-height: 600px;
+    }
+
+    .playerCard, .mainCard {
+        width: 450px;
+        height: 450px;
+    }
+}
