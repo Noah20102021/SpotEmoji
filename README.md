@@ -27,5 +27,3 @@ npm install
 npm start
 
 Then, navigate to http://localhost:3000 in your browser to start playing.
-
-Feel free to customize this description further based on additional features or specific technologies used in your project!
