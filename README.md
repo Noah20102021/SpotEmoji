@@ -1,6 +1,6 @@
 <b>Spot Emoji! – A Fast-Paced Online Emoji Game</b>
 
-Spot Emoji! is an unofficial online adaptation of a classic game, offering a fast-paced and engaging experience. Players can create or join lobbies to compete in identifying emojis quickly, making it perfect for casual gaming sessions with friends or testing your reflexes.
+Spot Emoji! is an unofficial online adaptation of a classic game(Dobble/SpotIt!), offering a fast-paced and engaging experience. Players can create or join lobbies to compete in identifying emojis quickly, making it perfect for casual gaming sessions with friends or testing your reflexes.
 
 <b>Features</b>
 - Test your emoji recognition skills in a fun, competitive environment
