@@ -18,9 +18,11 @@ Real-time Communication: Socket.io
 <b>Istallation</b>
 To run the game locally:
 
+```
 git clone https://github.com/your-username/spot-emoji.git
 cd spot-emoji
 npm install
 npm start
+```
 
 Then, navigate to http://localhost:3000 in your browser to start playing.
