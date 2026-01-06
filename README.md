@@ -8,12 +8,14 @@ Spot Emoji! is an unofficial online adaptation of a classic game, offering a fas
 - Fast-paced rounds to keep players engaged
 - Accessible via web browser with no installation required
 
- <b>Tech Stack</b>
-Frontend: HTML, CSS, JavaScript
+ <b>Tech Stack:</b>
+ 
+- Frontend: HTML, CSS, JavaScript
 
-Backend: Node.js with Express.js
+- Backend: Node.js with Express.js
 
-Real-time Communication: Socket.io
+- Real-time Communication: Socket.io
+
 
 <b>How to intall locally:</b>
 
