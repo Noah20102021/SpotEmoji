@@ -15,8 +15,7 @@ Backend: Node.js with Express.js
 
 Real-time Communication: Socket.io
 
-<b>Istallation</b>
-To run the game locally:
+<b>How to intall locally:</b>
 
 ```
 git clone https://github.com/your-username/spot-emoji.git
